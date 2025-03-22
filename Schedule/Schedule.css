@@ -1,0 +1,120 @@
+body{
+
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Jaldi-Bold', sans-serif;
+    overflow-x: hidden;
+}
+
+/* 
+    Header
+*/
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    padding: 10px 50px;
+    background-color: #000000;
+}
+
+.lien{
+    text-decoration: none;
+    color: #ffffff;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.page{
+    padding: 5px 15px;
+    box-shadow: -5px 5px 0px #ff0000; /* Correction du box-shadow */
+}
+
+.nav-bar a:hover{
+    color: #ff0000;
+}
+
+.nav-bar img{
+    height: 50px;
+}
+
+.boxshop{
+    background-color: #ff0000;
+    padding: 15px 20px;
+    border-radius: 25px 0 25px 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.boxshop:hover{
+    background-color: #ffffff;
+}
+
+
+
+/*
+    Schedule
+*/
+
+.titre{
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    text-align: center;
+
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*
+    section 1
+*/
+
+#section1{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    display: flex;    
+}
+
+.circuit{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.circuit img{
+    width: 80%;
+}
+
+.info{
+    position: relative;
+    width: 50%;
+    
+}
+
+.info h2{
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.info p{
+    font-size: 30px;
+    color: #ffffff;
+}
