@@ -1,0 +1,186 @@
+body{
+
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Jaldi-Bold', sans-serif;
+    overflow-x: hidden;
+}
+
+/* 
+    Header
+*/
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    padding: 10px 50px;
+    background-color: #000000;
+}
+
+.lien{
+    text-decoration: none;
+    color: #ffffff;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.page{
+    padding: 5px 15px;
+    box-shadow: -5px 5px 0px #ff0000; /* Correction du box-shadow */
+}
+
+.nav-bar a:hover{
+    color: #ff0000;
+}
+
+.nav-bar img{
+    height: 50px;
+}
+
+.boxshop{
+    background-color: #ff0000;
+    padding: 15px 20px;
+    border-radius: 25px 0 25px 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.boxshop:hover{
+    background-color: #ffffff;
+}
+
+
+
+/* 
+    Main
+*/
+
+
+/* 
+    Section 1
+*/
+#section1{
+    z-index: -5;
+    height: 960px; /* Hauteur plus grande pour permettre le défilement */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.imgfond {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    left: 60%;
+    transition: left 0.2s linear;
+    z-index: 1;
+}
+
+.logofond{
+    position: absolute;
+    height: 750px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.5;
+}
+.text{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+.text h1{
+    color: #ffffff;
+    font-size: 60px;
+}
+.text p{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+
+
+/* 
+    Section 2
+*/
+
+#section2{
+    position: absolute;
+    height: 1000px;
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    z-index: 0;
+}
+
+#section2 h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.P1HA{
+    position: relative;
+    left: 10%;
+    width: 500px;
+    height: 700px;
+    border-radius: 50px;
+}
+
+.text2{
+    position: relative;
+    width: 50%;
+    left: 40%;
+    top: -65%;
+    text-align: center;
+    
+}
+
+.text2 h2{
+    color: #000000;
+    font-size: 50px;
+}
+
+.text2 p{
+    color: #000000;
+    font-size: 30px;
+}
+
+.imgf1{
+    position: relative;
+    top: 50px;
+    width: 300px;
+}
+
+
+/* Masquer les éléments au départ */
+.P1HA, .text2, .h1{
+    opacity: 0;
+    transform: translateY(50px);  /* Décalage vers le bas */
+    transition: opacity 1s, transform 1s;
+}
+
+/* Appliquer l'animation quand la section est visible */
+.visible .P1HA, .visible .text2 , .visible .h1{
+    opacity: 1;
+    transform: translateY(0);  /* Réinitialiser le décalage */
+}
+
