@@ -18,6 +18,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 10;
+
 }
 
 .nav-bar{
@@ -68,25 +69,52 @@ header{
 /*
     Schedule
 */
+@keyframes typing {
+    0% {
+        width: 0;  
+        opacity: 0.5; 
+    }
+    100% {
+        width: 100%; 
+        opacity: 1; 
 
-.titre{
-    position: absolute;
-    top: 150px;
+    }
+}
+
+.titre {
+    position: relative;
+    height: 400px;
     width: 100%;
-    text-align: center;
-
+    background-image: url('/images/3214683-65848928-2560-1440.jpg');
+    background-position: center;
+    background-size: cover; 
+    
     font-size: 60px;
     font-weight: bold;
     color: #ffffff;
+
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
+
+.titre h1 {
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-align: center; 
+    animation: typing 3s steps(30) 0.4s forwards; 
+    opacity: 0; 
+}
+
+
 
 /*
     section 1
 */
 
 #section1{
-    position: absolute;
-    top: 250px;
+    position: relative;
+    margin-top: 40px;
     width: 100%;
     display: flex;    
 }
