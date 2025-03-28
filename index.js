@@ -56,3 +56,27 @@ const observer = new IntersectionObserver((entries, observer) => {
 // Observer la section
 const section = document.querySelector('#section2');
 observer.observe(section);
+
+
+
+
+// animation section 3  
+
+document.addEventListener("DOMContentLoaded", () => {
+    const section3 = document.querySelector("#section3");
+    const elements = section3.querySelectorAll(".text3, h1, p");
+
+    // Création de l'observateur d'intersection
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                elements.forEach(el => {
+                    el.classList.add("animate");
+                });
+                observer.disconnect(); // On stoppe l'observation après la première apparition
+            }
+        });
+    }, { threshold: 0.5 }); // 50% de la section visible pour déclencher
+
+    observer.observe(section3);
+});
