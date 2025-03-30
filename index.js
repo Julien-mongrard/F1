@@ -64,7 +64,7 @@ observer.observe(section);
 
 document.addEventListener("DOMContentLoaded", () => {
     const section3 = document.querySelector("#section3");
-    const elements = section3.querySelectorAll(".text3, h1, p");
+    const elements = section3.querySelectorAll(".text3, .img2025");
 
     // Création de l'observateur d'intersection
     const observer = new IntersectionObserver((entries, observer) => {
