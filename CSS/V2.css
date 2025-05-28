@@ -117,7 +117,7 @@ SECTION 2
 
 
 #section2 {
-  background: rgb(245, 245, 245);
+  background: #e5e7e6;
   padding: 50px;
   height: 90vh; 
 
@@ -128,7 +128,6 @@ SECTION 2
   font-size: 50px;
   margin-bottom: 50px; 
 }
-
 
 .imgtexte {
   display: flex;
@@ -150,19 +149,19 @@ SECTION 2
 }
 
 .text2 h2{
-    color: #000000;
-    font-size: 50px;
+  color: #000000;
+  font-size: 50px;
 }
 
 .text2 p{
-    color: #000000;
-    font-size: 30px;
+  color: #000000;
+  font-size: 30px;
 }
 
 .imgf1{
-    position: relative;
-    top: 50px;
-    width: 300px;
+  position: relative;
+  top: 50px;
+  width: 300px;
 }
 
 
@@ -175,38 +174,38 @@ SECTION 3
 
 
 #section3{
-    position: relative;
-    background-color: #000000;
-    width: 100%;
-    z-index: 0;
-    padding: 50px 0 50px 0 ;
-    display: flex;
-    align-items: center; 
-    justify-content: space-around;
+  position: relative;
+  background-color: #09090a;
+  width: 100%;
+  z-index: 0;
+  padding: 50px 0 50px 0 ;
+  display: flex;
+  align-items: center; 
+  justify-content: space-around;
 
 }
 
 .text3{
-    width: 40%;
-    left: 55%;
-    text-align: center;
+  width: 40%;
+  left: 55%;
+  text-align: center;
 }
 
 .text3 h1{
-    color: #ffffff;
-    font-size: 50px;
+  color: #ffffff;
+  font-size: 50px;
 }
 
 .text3 p{
-    color: #ffffff;
-    font-size: 30px;
-    margin-top: 50px;
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
 .img2025{
-    width: 45%;
-    left: 5%;
-    border-radius: 50px;
+  width: 45%;
+  left: 5%;
+  border-radius: 50px;
 }
 
 

@@ -1,5 +1,5 @@
 // Config
-const SCROLL_DELAY = 800; // Délai minimal entre 2 défilements (ms)
+const SCROLL_DELAY = 800; 
 const SMOOTH_SCROLL = true; // Active le défilement doux natif
 
 // Variables
