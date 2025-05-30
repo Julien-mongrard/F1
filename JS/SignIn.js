@@ -8,19 +8,25 @@ function toggleForm() {
 function createAccount() {
   const email = document.getElementById("signupEmail").value.trim();
   const password = document.getElementById("signupPassword").value.trim();
+  const confirmPassword = document.getElementById("signupConfirmPassword").value.trim();
 
-  if (email && password) {
-    accounts.push({ email, password });
+  if (email && password && confirmPassword) {
+    if (password === confirmPassword) {
+      accounts.push({ email, password });
 
-    const tbody = document.querySelector("#accountTable tbody");
-    const row = document.createElement("tr");
-    row.innerHTML = `<td>${email}</td><td>${password}</td>`;
-    tbody.appendChild(row);
+      const tbody = document.querySelector("#accountTable tbody");
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${email}</td><td>${password}</td>`;
+      tbody.appendChild(row);
 
-    document.getElementById("signupEmail").value = "";
-    document.getElementById("signupPassword").value = "";
+      document.getElementById("signupEmail").value = "";
+      document.getElementById("signupPassword").value = "";
+      document.getElementById("signupConfirmPassword").value = "";
 
-    toggleForm();
+      toggleForm();
+    } else {
+      alert("Les mots de passe ne correspondent pas.");
+    }
   } else {
     alert("Merci de remplir les champs email et mot de passe.");
   }
