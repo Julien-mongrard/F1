@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In / Sign Up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img src="/F1/MEDIA/logoF1.png" alt="Logo F1" class="logo">
+            <a class="lien" href="/F1/index.html">Home</a>
+            <a class="lien" href="catalogue.html">Grid</a>
+            <a class="lien" href="/F1/Schedule/index.html">Schedule</a>
+            <a class="lien" href="/F1/HTML/Result.html">Results</a>
+            <a class="lien" href="/F1/HTML/SignIn.html">Sign In</a>
+        </nav>
+    </header>
+
+  <div class="container">
+    <div class="card" id="card">
+        <div class="form-box sign-in">
+        <h2>Sign In</h2>
+        <input type="email" id="signinEmail" placeholder="Email">
+        <input type="password" id="signinPassword" placeholder="Password">
+        <button onclick="login()">Confirm</button>
+        <p class="switch" onclick="toggleForm()">Create an<br>account</p>
+        </div>
+
+
+      <div class="form-box sign-up">
+        <h2>Create an account</h2>
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <input type="password" placeholder="Confirm password">
+        <button onclick="createAccount()">Confirm</button>
+        <p class="switch" onclick="toggleForm()">Sign In</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <h3>Comptes créés :</h3>
+    <table id="accountTable">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Mot de passe</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
