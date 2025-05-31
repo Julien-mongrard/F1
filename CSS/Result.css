@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: jaldi, sans-serif;
-  background-color: rgb(22, 21, 20);
+    background-color: #1e1e1e;
 }
 
 
@@ -101,12 +101,11 @@ header {
   color: #fff;
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 
-  /* Modification ici */
   white-space: nowrap;
-  left: 50%; /* Centre horizontalement */
-  transform: translateX(-50%); /* Ajuste précisément le centrage */
-  text-align: center; /* Centre le texte à l'intérieur */
-  margin: 0; /* Supprime la marge auto */
+  left: 50%; 
+  transform: translateX(-50%); 
+  text-align: center; 
+  margin: 0; 
 
   /* Animation */
   overflow: hidden;
