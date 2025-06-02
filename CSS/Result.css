@@ -1,4 +1,3 @@
-/* Reset de base */
 html, body {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@ html, body {
   color: #fff;
 }
 
-/* Header et Navbar */
 header {
   position: fixed;
   width: 100%;
@@ -57,7 +55,6 @@ header {
   width: 100%;
 }
 
-/* Header Content */
 .header-content {
   position: relative;
   padding: 70px 0;
@@ -101,7 +98,6 @@ header {
   to { opacity: 1; }
 }
 
-/* Tableaux F1 */
 .f1-table {
   width: 60%;
   margin: 30px auto;
@@ -173,7 +169,6 @@ header {
   font-weight: 600;
 }
 
-/* Titre section */
 .section-results h1 {
   color: white;
   text-align: center;
@@ -182,9 +177,7 @@ header {
   text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Responsive Design */
 
-/* Tablettes et petits laptops */
 @media (max-width: 1024px) {
   .nav-bar {
     padding: 15px;
@@ -207,7 +200,6 @@ header {
   }
 }
 
-/* Mobiles */
 @media (max-width: 768px) {
   .nav-bar {
     padding: 5px 10px;

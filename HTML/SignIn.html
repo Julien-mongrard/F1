@@ -65,52 +65,54 @@
 
 
   <section id="quizSection" style="display:none;">
-  <h3>Quiz Formula 1</h3>
-  <div id="quizContainer">
-    <p id="question"></p>
-    <div id="answers"></div>
-    <button id="nextBtn" onclick="nextQuestion()">Suivant</button>
+    <h3>Quiz Formula 1</h3>
+    <div id="quizContainer">
+      <p id="question"></p>
+      <div id="answers"></div>
+      <button id="nextBtn" onclick="nextQuestion()">Suivant</button>
+    </div>
+    <div id="result" style="display:none;">
+      <h4>Votre score final : <span id="score"></span> / <span id="total"></span></h4>
+      <button onclick="restartQuiz()">Recommencer</button>
+    </div>
+  </section>
+
+  <div id="scoresSection">
+    <h2>Scores</h2>
+    <table id="scoresTable">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
   </div>
-  <div id="result" style="display:none;">
-    <h4>Votre score final : <span id="score"></span> / <span id="total"></span></h4>
-    <button onclick="restartQuiz()">Recommencer</button>
-  </div>
-</section>
-
-<div id="scoresSection">
-  <h2>Scores</h2>
-  <table id="scoresTable">
-    <thead>
-      <tr>
-        <th>Email</th>
-        <th>Score</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-</div>
 
 
-  <footer>
-    <div class="footer-content">
-        <img src="/F1/MEDIA/logoF1.png" alt="Logo F1" class="footer-logo">
-        <p>&copy; 2025 Formula 1. All rights reserved.</p>
-        <p>This is not the official F1 website, it's a school project, the real site is this one <a href="https://www.formula1.com" target="_blank">Formula 1</a></p>
-        <p>about Us : <a href="/F1/HTML/about.html">Learn more</a></p>
-        <p>Follow F1 on:
+
+    <footer>
+        <div class="footer-content">
+            <img src="/F1/MEDIA/logoF1.png" alt="Logo F1" class="footer-logo">
+            <p>&copy; 2025 Formula 1. All rights reserved.</p>
+            <p>This is not the official F1 website, it's a school project, the real site is this one <a href="https://www.formula1.com" target="_blank">Formula 1</a></p>
+            <p>About Us : <a href="/F1/HTML/about.html">Learn more</a></p>
+            <p>Follow F1 on:
             <a href="https://www.facebook.com/Formula1" target="_blank">Facebook</a> |
             <a href="https://twitter.com/F1" target="_blank">Twitter</a> |
             <a href="https://www.instagram.com/f1/" target="_blank">Instagram</a>
-        </p>
-    </div>
-    <div class="footer-links">
-        <a href="/F1/HTML/SignIn.html">Sign In</a>
-        <a href="/F1/HTML/Shop.html">Shop</a>
-        <a href="/F1/HTML/Result.html">Results</a>
-        <a href="/F1/HTML/Schedule.html">Schedule</a>
-        <a href="/F1/HTML/Grid.html">Grid</a>
-    </div>
-</footer>
+            </p>
+        </div>
+        <div class="footer-links">
+            <a href="/F1/HTML/SignIn.html">Sign In</a>
+            <a href="/F1/HTML/Shop.html">Shop</a>
+            <a href="/F1/HTML/Result.html">Results</a>
+            <a href="/F1/HTML/Schedule.html">Schedule</a>
+            <a href="/F1/HTML/Grid.html">Grid</a>
+        </div>
+    </footer>
+
 </body>
 </html>
