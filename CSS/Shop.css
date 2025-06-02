@@ -81,7 +81,7 @@ header {
 @keyframes typing {
     from { 
         width: 0;
-        visibility: hidden; /* Meilleur que opacity:0 pour le CLS */
+        visibility: hidden; 
     }
     to { 
         width: 100%;
@@ -277,7 +277,6 @@ button:hover {
   }
 }
 
-/* Mobiles */
 @media (max-width: 768px) {
   .nav-bar {
     padding: 5px 10px;
@@ -294,4 +293,35 @@ button:hover {
     padding: 2px 4px;
     margin: 0 3px;
   }
+}
+
+
+
+/*
+
+footer
+
+*/
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 70%;
+}
+
+footer img {
+  height: 50px;
+  margin: 0 10px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }

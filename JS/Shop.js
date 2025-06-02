@@ -1,14 +1,12 @@
 const products = [
-  { name: "Ferrari Polo", price: 99, img: "/F1/MEDIA/Shop/ferraripolo.png" },
+  { name: "Ferrari Polo", price: 150, img: "/F1/MEDIA/Shop/ferraripolo.png" },
   { name: "Alpine Polo", price: 99, img: "/F1/MEDIA/Shop/aplinepolo.png" },
-  { name: "Aston Martin Polo", price: 99, img: "/F1/MEDIA/Shop/astonmartinpolo.png" },
-  { name: "Mclaren Polo", price: 99, img: "/F1/MEDIA/Shop/mclarenpolo.png" },
+  { name: "Aston Martin Polo", price: 79, img: "/F1/MEDIA/Shop/astonmartinpolo.png" },
+  { name: "Mclaren Polo", price: 90, img: "/F1/MEDIA/Shop/mclarenpolo.png" },
   { name: "RedBull Polo", price: 99, img: "/F1/MEDIA/Shop/redbullpolo.png" },
   { name: "Racing Bull Polo", price: 99, img: "/F1/MEDIA/Shop/racingbullpolo.png" },
-  { name: "Stake Polo", price: 99, img: "/F1/MEDIA/Shop/stakepolo.png" },
-  { name: "Hass Polo", price: 99  , img: "/F1/MEDIA/Shop/haaspolo.png" },
-  { name: "water bottle", price: 18, img: "/F1/MEDIA/Shop/waterbottle.jpg" },
-  { name: "phone case", price: 25, img: "/F1/MEDIA/Shop/phonecase.jpg" }
+  { name: "Stake Polo", price: 80, img: "/F1/MEDIA/Shop/stakepolo.png" },
+  { name: "Hass Polo", price: 75  , img: "/F1/MEDIA/Shop/haaspolo.png" },
 ];
 
 let cart = [];

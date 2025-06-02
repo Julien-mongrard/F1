@@ -65,8 +65,12 @@ header {
   transform: scale(1.1) rotate(-5deg);
 }
 
-
-
+.text {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-size: 24px;
+}
 .container {
   width: 400px;
   height: 450px;
@@ -158,4 +162,69 @@ th, td {
 th {
   color: red;
   border-bottom: 2px solid red;
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .nav-bar {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .lien {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 5px 10px;
+    gap: 3px;
+    flex-wrap: nowrap;
+  }
+
+  .nav-bar img {
+    height: 15px;
+  }
+
+  .lien {
+    font-size: 12px;
+    padding: 2px 4px;
+    margin: 0 3px;
+  }
+}
+
+
+
+/*
+
+footer
+
+*/
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: 70%;
+}
+
+footer img {
+  height: 50px;
+  margin: 0 10px;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
