@@ -12,6 +12,7 @@ html, body {
   scroll-snap-type: y mandatory;
   scroll-snap-stop: always;
   overflow-y: scroll;
+  overflow: hidden;
 }
 
 /* 
